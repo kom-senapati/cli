@@ -14,6 +14,7 @@ import semver from "semver"
 import { registerExport } from "./export/register"
 import { registerAuthPrintToken } from "./auth/print-token/register"
 import { registerAuthSetToken } from "./auth/set-token/register"
+import { registerPush } from "./push/register"
 
 const program = new Command()
 
@@ -39,6 +40,7 @@ registerConfig(program)
 registerConfigPrint(program)
 
 registerExport(program)
+registerPush(program)
 
 if (process.argv.length === 2) {
   perfectCli(program, process.argv)
