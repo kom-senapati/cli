@@ -22,6 +22,8 @@ tsci clone author/snippetName
 npm install -g @tscircuit/cli
 ```
 
+lets see
+
 # CLI USAGE
 
 <!-- start -->
